@@ -1,39 +1,10 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
-  <channel>
-    <title>Posts on My Blog</title>
-    <link>http://localhost:1313/posts/</link>
-    <description>Recent content in Posts on My Blog</description>
-    <generator>Hugo</generator>
-    <language>en-us</language>
-    <lastBuildDate>Wed, 01 Apr 2026 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Android Phone Overheating? Causes and Fixes (2026)</title>
-      <link>http://localhost:1313/posts/android-phone-overheating/</link>
-      <pubDate>Wed, 01 Apr 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/android-phone-overheating/</guid>
-      <description>&lt;!-- wp:paragraph --&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Posts on My Blog</title><link>https://androidscroll.gwill.workers.dev/posts/</link><description>Recent content in Posts on My Blog</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Wed, 01 Apr 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://androidscroll.gwill.workers.dev/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>Android Phone Overheating? Causes and Fixes (2026)</title><link>https://androidscroll.gwill.workers.dev/posts/android-phone-overheating/</link><pubDate>Wed, 01 Apr 2026 00:00:00 +0000</pubDate><guid>https://androidscroll.gwill.workers.dev/posts/android-phone-overheating/</guid><description>&lt;!-- wp:paragraph --&gt;
 &lt;p&gt;An Android phone overheating is almost always caused by a background app consuming CPU when the screen is off. Go to &lt;strong&gt;Settings &amp;gt; Battery &amp;gt; Battery Usage&lt;/strong&gt; right now. Look for any app showing usage while the screen was not in use. Restrict it. That single step resolves the majority of overheating cases.&lt;/p&gt;
 &lt;!-- /wp:paragraph --&gt;
 &lt;!-- wp:paragraph --&gt;
 &lt;p&gt;Every fix in this guide was verified on a &lt;strong&gt;Tecno Spark 40 running Android 15&lt;/strong&gt; and a &lt;strong&gt;Tecno Camon 15 Air running Android 10&lt;/strong&gt;. All navigation paths were confirmed on both devices.
-&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Android Problems: The Complete Fix Guide (2026)</title>
-      <link>http://localhost:1313/posts/android-problems-fix/</link>
-      <pubDate>Tue, 31 Mar 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/android-problems-fix/</guid>
-      <description>&lt;!-- wp:paragraph --&gt;
-&lt;p&gt;Most Android issues resolve themselves once you identify the root cause. Overheating, fast battery drain, storage warnings, Wi-Fi drops, and app crashes all have a software cause in most cases. That means you can fix them yourself, at home, for free. The most common fix across all 16 problems in this guide is restricting background apps. Start with &lt;strong&gt;Settings &amp;gt; Battery &amp;gt; Battery Usage&lt;/strong&gt; and look for any app running in the background while your screen was off.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Android Battery Draining Fast: Real Solutions That Actually Work (2026)</title>
-      <link>http://localhost:1313/posts/android-battery-draining-fast/</link>
-      <pubDate>Tue, 10 Feb 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/android-battery-draining-fast/</guid>
-      <description>&lt;!-- wp:paragraph --&gt;
+&lt;/p&gt;</description></item><item><title>Android Problems: The Complete Fix Guide (2026)</title><link>https://androidscroll.gwill.workers.dev/posts/android-problems-fix/</link><pubDate>Tue, 31 Mar 2026 00:00:00 +0000</pubDate><guid>https://androidscroll.gwill.workers.dev/posts/android-problems-fix/</guid><description>&lt;!-- wp:paragraph --&gt;
+&lt;p&gt;Most Android issues resolve themselves once you identify the root cause. Overheating, fast battery drain, storage warnings, Wi-Fi drops, and app crashes all have a software cause in most cases. That means you can fix them yourself, at home, for free. The most common fix across all 16 problems in this guide is restricting background apps. Start with &lt;strong&gt;Settings &amp;gt; Battery &amp;gt; Battery Usage&lt;/strong&gt; and look for any app running in the background while your screen was off.&lt;/p&gt;</description></item><item><title>Android Battery Draining Fast: Real Solutions That Actually Work (2026)</title><link>https://androidscroll.gwill.workers.dev/posts/android-battery-draining-fast/</link><pubDate>Tue, 10 Feb 2026 00:00:00 +0000</pubDate><guid>https://androidscroll.gwill.workers.dev/posts/android-battery-draining-fast/</guid><description>&lt;!-- wp:paragraph --&gt;
 &lt;p&gt;Few things are more annoying than watching your Android battery drop &lt;strong&gt;10% in minutes&lt;/strong&gt;, even when you’re barely using your phone.&lt;/p&gt;
 &lt;!-- /wp:paragraph --&gt;
 &lt;!-- wp:paragraph --&gt;
@@ -46,36 +17,15 @@
 &lt;p&gt;The truth?&lt;/p&gt;
 &lt;!-- /wp:paragraph --&gt;
 &lt;!-- wp:paragraph --&gt;
-&lt;p&gt;&lt;strong&gt;Fast battery drain isn’t random.&lt;/strong&gt; It’s almost always caused by specific apps, settings, or system behavior. Once you fix those, your battery life improves immediately.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>19 Google Assistant commands to make your mornings easier</title>
-      <link>http://localhost:1313/posts/google-assistant-commands-to-make-your-mornings-ea/</link>
-      <pubDate>Mon, 30 Oct 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/google-assistant-commands-to-make-your-mornings-ea/</guid>
-      <description>&lt;!-- wp:paragraph --&gt;
-&lt;p&gt;Are you tired of starting your day feeling disorganized and rushed? Do you wish there was a way to streamline your morning routine, so you can start your day off right? You&#39;re not alone. Many of us struggle with getting our day started smoothly and efficiently.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Fast battery drain isn’t random.&lt;/strong&gt; It’s almost always caused by specific apps, settings, or system behavior. Once you fix those, your battery life improves immediately.&lt;/p&gt;</description></item><item><title>19 Google Assistant commands to make your mornings easier</title><link>https://androidscroll.gwill.workers.dev/posts/google-assistant-commands-to-make-your-mornings-ea/</link><pubDate>Mon, 30 Oct 2023 00:00:00 +0000</pubDate><guid>https://androidscroll.gwill.workers.dev/posts/google-assistant-commands-to-make-your-mornings-ea/</guid><description>&lt;!-- wp:paragraph --&gt;
+&lt;p&gt;Are you tired of starting your day feeling disorganized and rushed? Do you wish there was a way to streamline your morning routine, so you can start your day off right? You're not alone. Many of us struggle with getting our day started smoothly and efficiently.&lt;/p&gt;
 &lt;!-- /wp:paragraph --&gt;
 &lt;!-- wp:paragraph --&gt;
-&lt;p&gt;The good news is, there&#39;s a solution that&#39;s already at your fingertips. Google Assistant, a powerful virtual assistant, can help you organize your mornings with simple voice commands. From setting alarms and checking the weather to finding recipes and reading the news, Google Assistant can do it all.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>How to Increase Storage Space on Android (9 Easy Ways to Free Up Memory)</title>
-      <link>http://localhost:1313/posts/increase-storage-space-on-android/</link>
-      <pubDate>Fri, 20 Oct 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/increase-storage-space-on-android/</guid>
-      <description>&lt;!-- wp:paragraph --&gt;
-&lt;p&gt;Running out of storage on your Android phone can be incredibly frustrating. One moment you&#39;re trying to install a new app or take a photo, and the next you see the dreaded &lt;strong&gt;“Storage Almost Full”&lt;/strong&gt; warning. When this happens, your phone may slow down, apps may crash, and even basic tasks become difficult.&lt;/p&gt;
+&lt;p&gt;The good news is, there's a solution that's already at your fingertips. Google Assistant, a powerful virtual assistant, can help you organize your mornings with simple voice commands. From setting alarms and checking the weather to finding recipes and reading the news, Google Assistant can do it all.&lt;/p&gt;</description></item><item><title>How to Increase Storage Space on Android (9 Easy Ways to Free Up Memory)</title><link>https://androidscroll.gwill.workers.dev/posts/increase-storage-space-on-android/</link><pubDate>Fri, 20 Oct 2023 00:00:00 +0000</pubDate><guid>https://androidscroll.gwill.workers.dev/posts/increase-storage-space-on-android/</guid><description>&lt;!-- wp:paragraph --&gt;
+&lt;p&gt;Running out of storage on your Android phone can be incredibly frustrating. One moment you're trying to install a new app or take a photo, and the next you see the dreaded &lt;strong&gt;“Storage Almost Full”&lt;/strong&gt; warning. When this happens, your phone may slow down, apps may crash, and even basic tasks become difficult.&lt;/p&gt;
 &lt;!-- /wp:paragraph --&gt;
 &lt;!-- wp:paragraph --&gt;
-&lt;p&gt;The good news is that you don’t need to buy a new phone to fix this. With a few simple steps, you can &lt;strong&gt;free up space on Android, clear unnecessary files, and get rid of the “Android storage full” problem&lt;/strong&gt; in minutes.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Android Malware: 5 Warning Signs and a Safe Step-by-Step Removal Guide</title>
-      <link>http://localhost:1313/posts/how-to-stop-malware-from-destroying-your-phone/</link>
-      <pubDate>Wed, 18 Oct 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/how-to-stop-malware-from-destroying-your-phone/</guid>
-      <description>&lt;!-- wp:paragraph --&gt;
+&lt;p&gt;The good news is that you don’t need to buy a new phone to fix this. With a few simple steps, you can &lt;strong&gt;free up space on Android, clear unnecessary files, and get rid of the “Android storage full” problem&lt;/strong&gt; in minutes.&lt;/p&gt;</description></item><item><title>Android Malware: 5 Warning Signs and a Safe Step-by-Step Removal Guide</title><link>https://androidscroll.gwill.workers.dev/posts/how-to-stop-malware-from-destroying-your-phone/</link><pubDate>Wed, 18 Oct 2023 00:00:00 +0000</pubDate><guid>https://androidscroll.gwill.workers.dev/posts/how-to-stop-malware-from-destroying-your-phone/</guid><description>&lt;!-- wp:paragraph --&gt;
 &lt;p&gt;Is your phone acting strange?&lt;/p&gt;
 &lt;!-- /wp:paragraph --&gt;
 &lt;!-- wp:paragraph --&gt;
@@ -85,91 +35,46 @@
 &lt;p&gt;That’s not normal.&lt;/p&gt;
 &lt;!-- /wp:paragraph --&gt;
 &lt;!-- wp:paragraph --&gt;
-&lt;p&gt;Phones can get malware just like computers. And today, hackers target phones more because they store banking apps, passwords, photos, and private messages.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>How to Test a New Android Phone (Complete Checklist Before You Use It)</title>
-      <link>http://localhost:1313/posts/how-to-test-android/</link>
-      <pubDate>Thu, 17 Aug 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/how-to-test-android/</guid>
-      <description>&lt;!-- wp:paragraph --&gt;
+&lt;p&gt;Phones can get malware just like computers. And today, hackers target phones more because they store banking apps, passwords, photos, and private messages.&lt;/p&gt;</description></item><item><title>How to Test a New Android Phone (Complete Checklist Before You Use It)</title><link>https://androidscroll.gwill.workers.dev/posts/how-to-test-android/</link><pubDate>Thu, 17 Aug 2023 00:00:00 +0000</pubDate><guid>https://androidscroll.gwill.workers.dev/posts/how-to-test-android/</guid><description>&lt;!-- wp:paragraph --&gt;
 &lt;p&gt;Unboxing a brand-new Android phone is exciting. The shiny screen, fast performance, and that “new device” feeling. But here’s the reality: &lt;strong&gt;even new phones can ship with hidden defects&lt;/strong&gt; like dead pixels, faulty sensors, overheating issues, or poor battery health.&lt;/p&gt;
 &lt;!-- /wp:paragraph --&gt;
 &lt;!-- wp:paragraph --&gt;
-&lt;p&gt;The good news is that most retailers give you a &lt;strong&gt;7 to 14-day return window&lt;/strong&gt;. That short period is your chance to run a proper &lt;strong&gt;Android hardware diagnostic check&lt;/strong&gt; and make sure everything works exactly as it should.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>What damages phone battery? Top 5 reasons and how to avoid them</title>
-      <link>http://localhost:1313/posts/what-damages-phone-battery/</link>
-      <pubDate>Sat, 15 Jul 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/what-damages-phone-battery/</guid>
-      <description>&lt;!-- wp:paragraph --&gt;
-&lt;p&gt;Are you wondering what damages phone battery and causes it to drain quickly? If so, you&#39;re not alone.&lt;/p&gt;
+&lt;p&gt;The good news is that most retailers give you a &lt;strong&gt;7 to 14-day return window&lt;/strong&gt;. That short period is your chance to run a proper &lt;strong&gt;Android hardware diagnostic check&lt;/strong&gt; and make sure everything works exactly as it should.&lt;/p&gt;</description></item><item><title>What damages phone battery? Top 5 reasons and how to avoid them</title><link>https://androidscroll.gwill.workers.dev/posts/what-damages-phone-battery/</link><pubDate>Sat, 15 Jul 2023 00:00:00 +0000</pubDate><guid>https://androidscroll.gwill.workers.dev/posts/what-damages-phone-battery/</guid><description>&lt;!-- wp:paragraph --&gt;
+&lt;p&gt;Are you wondering what damages phone battery and causes it to drain quickly? If so, you're not alone.&lt;/p&gt;
 &lt;!-- /wp:paragraph --&gt;
 &lt;!-- wp:paragraph --&gt;
 &lt;p&gt;Battery problems are a common frustration for many people and there are a number of reasons why your phone battery might be dying so fast.&lt;/p&gt;
 &lt;!-- /wp:paragraph --&gt;
 &lt;!-- wp:paragraph --&gt;
-&lt;p&gt;In this article, I&#39;ll tell you the top 5 reasons for phone battery damage and I&#39;ll give you tips on how to avoid them.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>How to Improve Battery Life on Android (Make It Last All Day)</title>
-      <link>http://localhost:1313/posts/how-to-improve-battery-life-on-android-devices/</link>
-      <pubDate>Thu, 13 Apr 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/how-to-improve-battery-life-on-android-devices/</guid>
-      <description>&lt;!-- wp:paragraph --&gt;
-&lt;p&gt;Do you ever find yourself running out of battery power on your Android device? You&#39;re not alone. In fact, battery life is one of the most common complaints among Android users.&lt;/p&gt;
+&lt;p&gt;In this article, I'll tell you the top 5 reasons for phone battery damage and I'll give you tips on how to avoid them.&lt;/p&gt;</description></item><item><title>How to Improve Battery Life on Android (Make It Last All Day)</title><link>https://androidscroll.gwill.workers.dev/posts/how-to-improve-battery-life-on-android-devices/</link><pubDate>Thu, 13 Apr 2023 00:00:00 +0000</pubDate><guid>https://androidscroll.gwill.workers.dev/posts/how-to-improve-battery-life-on-android-devices/</guid><description>&lt;!-- wp:paragraph --&gt;
+&lt;p&gt;Do you ever find yourself running out of battery power on your Android device? You're not alone. In fact, battery life is one of the most common complaints among Android users.&lt;/p&gt;
 &lt;!-- /wp:paragraph --&gt;
 &lt;!-- wp:paragraph --&gt;
-&lt;p&gt;But there are a few things you can do to improve battery life on your Android device, even if you&#39;re not a tech expert.&lt;/p&gt;
+&lt;p&gt;But there are a few things you can do to improve battery life on your Android device, even if you're not a tech expert.&lt;/p&gt;
 &lt;!-- /wp:paragraph --&gt;
 &lt;!-- wp:paragraph --&gt;
-&lt;p&gt;In this blog post, I&#39;ll share 15 unexpected ways to improve battery life on your Android device&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>7 Charging mistakes that are damaging your phone battery</title>
-      <link>http://localhost:1313/posts/6-charging-mistakes-that-damage-your-phone-battery/</link>
-      <pubDate>Mon, 14 Mar 2022 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/6-charging-mistakes-that-damage-your-phone-battery/</guid>
-      <description>&lt;!-- wp:paragraph --&gt;
+&lt;p&gt;In this blog post, I'll share 15 unexpected ways to improve battery life on your Android device&lt;/p&gt;</description></item><item><title>7 Charging mistakes that are damaging your phone battery</title><link>https://androidscroll.gwill.workers.dev/posts/6-charging-mistakes-that-damage-your-phone-battery/</link><pubDate>Mon, 14 Mar 2022 00:00:00 +0000</pubDate><guid>https://androidscroll.gwill.workers.dev/posts/6-charging-mistakes-that-damage-your-phone-battery/</guid><description>&lt;!-- wp:paragraph --&gt;
 &lt;p&gt;Have you ever wondered why your phone battery seems to die so quickly, even after a full charge?&lt;/p&gt;
 &lt;!-- /wp:paragraph --&gt;
 &lt;!-- wp:paragraph --&gt;
 &lt;p&gt;Well, the answer might be closer than you think.&lt;/p&gt;
 &lt;!-- /wp:paragraph --&gt;
 &lt;!-- wp:paragraph --&gt;
-&lt;p&gt;Believe it or not, the way you charge your phone can actually damage the battery and lead to poor performance. In fact, there are seven charging mistakes that many people make without even realizing it.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>How to Read Deleted WhatsApp Messages (Even After They’re Gone)</title>
-      <link>http://localhost:1313/posts/read-deleted-whatsapp-messages/</link>
-      <pubDate>Fri, 12 Jul 2019 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/read-deleted-whatsapp-messages/</guid>
-      <description>&lt;!-- wp:paragraph --&gt;
-&lt;p&gt;It can be frustrating trying to figure out what&#39;s behind those deleted messages on your Whatsapp chats. &lt;/p&gt;
+&lt;p&gt;Believe it or not, the way you charge your phone can actually damage the battery and lead to poor performance. In fact, there are seven charging mistakes that many people make without even realizing it.&lt;/p&gt;</description></item><item><title>How to Read Deleted WhatsApp Messages (Even After They’re Gone)</title><link>https://androidscroll.gwill.workers.dev/posts/read-deleted-whatsapp-messages/</link><pubDate>Fri, 12 Jul 2019 00:00:00 +0000</pubDate><guid>https://androidscroll.gwill.workers.dev/posts/read-deleted-whatsapp-messages/</guid><description>&lt;!-- wp:paragraph --&gt;
+&lt;p&gt;It can be frustrating trying to figure out what's behind those deleted messages on your Whatsapp chats. &lt;/p&gt;
 &lt;!-- /wp:paragraph --&gt;
 &lt;!-- wp:paragraph --&gt;
-&lt;p&gt;I&#39;m talking about those “This message was deleted” texts that appear after someone un-sends their message to you on WhatsApp.&lt;/p&gt;
+&lt;p&gt;I'm talking about those “This message was deleted” texts that appear after someone un-sends their message to you on WhatsApp.&lt;/p&gt;
 &lt;!-- /wp:paragraph --&gt;
-&lt;!-- wp:image {&#34;id&#34;:6857,&#34;sizeSlug&#34;:&#34;full&#34;,&#34;linkDestination&#34;:&#34;media&#34;} --&gt;
-&lt;figure class=&#34;wp-block-image size-full&#34;&gt;&lt;a href=&#34;https://androidscroll.com/wp-content/uploads/2022/08/This-message-was-deleted.jpg&#34;&gt;&lt;img src=&#34;https://androidscroll.com/wp-content/uploads/2022/08/This-message-was-deleted.jpg&#34; alt=&#34;This message was deleted&#34; class=&#34;wp-image-6857&#34;/&gt;&lt;/a&gt;&lt;/figure&gt;
+&lt;!-- wp:image {"id":6857,"sizeSlug":"full","linkDestination":"media"} --&gt;
+&lt;figure class="wp-block-image size-full"&gt;&lt;a href="https://androidscroll.com/wp-content/uploads/2022/08/This-message-was-deleted.jpg"&gt;&lt;img src="https://androidscroll.com/wp-content/uploads/2022/08/This-message-was-deleted.jpg" alt="This message was deleted" class="wp-image-6857"/&gt;&lt;/a&gt;&lt;/figure&gt;
 &lt;!-- /wp:image --&gt;
 &lt;!-- wp:paragraph --&gt;
-&lt;p&gt;Once the message is deleted you can never see it again.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Dropped Your Phone in Water? Do This Immediately to Save It</title>
-      <link>http://localhost:1313/posts/how-to-save-your-phone-from-water-damage/</link>
-      <pubDate>Sun, 19 May 2019 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/how-to-save-your-phone-from-water-damage/</guid>
-      <description>&lt;!-- wp:paragraph --&gt;
-&lt;p&gt;We&#39;ve heard the phrase &#34;water no get enemy&#34;, but that is not entirely true because electronics like your smartphone don&#39;t really like water.&lt;/p&gt;
+&lt;p&gt;Once the message is deleted you can never see it again.&lt;/p&gt;</description></item><item><title>Dropped Your Phone in Water? Do This Immediately to Save It</title><link>https://androidscroll.gwill.workers.dev/posts/how-to-save-your-phone-from-water-damage/</link><pubDate>Sun, 19 May 2019 00:00:00 +0000</pubDate><guid>https://androidscroll.gwill.workers.dev/posts/how-to-save-your-phone-from-water-damage/</guid><description>&lt;!-- wp:paragraph --&gt;
+&lt;p&gt;We've heard the phrase "water no get enemy", but that is not entirely true because electronics like your smartphone don't really like water.&lt;/p&gt;
 &lt;!-- /wp:paragraph --&gt;
 &lt;!-- wp:paragraph --&gt;
 &lt;p&gt;All smartphones, even the water-resistant ones, all share the same risks of getting damaged if exposed to water.&lt;/p&gt;
 &lt;!-- /wp:paragraph --&gt;
 &lt;!-- wp:paragraph --&gt;
-&lt;p&gt;Might be water from the sink, bathtub, toilet, gutter, a bucket of water, etc. it doesn&#39;t matter, what matters is what you do afterward to rescue it from its so-called enemy, water.&lt;/p&gt;</description>
-    </item>
-  </channel>
-</rss>
+&lt;p&gt;Might be water from the sink, bathtub, toilet, gutter, a bucket of water, etc. it doesn't matter, what matters is what you do afterward to rescue it from its so-called enemy, water.&lt;/p&gt;</description></item></channel></rss>

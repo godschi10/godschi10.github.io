@@ -1,4 +1,4 @@
-name: Deploy Hugo site to Pages
+name: Deploy Hugo site
 
 on:
   push:
@@ -24,6 +24,12 @@ jobs:
       - uses: actions/upload-pages-artifact@v3
         with:
           path: ./public
+      - name: Deploy to Cloudflare Pages
+        uses: cloudflare/wrangler-action@v3
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          command: pages deploy public --project-name=androidscroll
 
   deploy:
     needs: build
