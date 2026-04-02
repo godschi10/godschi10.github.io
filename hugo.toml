@@ -1,0 +1,15 @@
+baseURL = "https://YOURUSERNAME.github.io/"
+languageCode = "en-us"
+title = "AndroidScroll"
+theme = "PaperMod"
+
+[params]
+  description = "My personal blog"
+  ShowReadingTime = true
+  ShowPostNavLinks = true
+  ShowBreadCrumbs = true
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
