@@ -1,6 +1,6 @@
-baseURL = "https://YOURUSERNAME.github.io/"
+baseURL = "https://godschi10.github.io/"
 languageCode = "en-us"
-title = "AndroidScroll"
+title = "My Blog"
 theme = "PaperMod"
 
 [params]
