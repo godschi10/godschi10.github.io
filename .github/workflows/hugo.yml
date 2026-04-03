@@ -28,7 +28,7 @@ jobs:
         with:
           path: ./public
       - name: Deploy to Cloudflare
-        run: npx wrangler pages deploy public --project-name=androidscroll-on-astro
+        run: npx wrangler pages deploy public --project-name=androidscroll-on-astro --commit-dirty=true
         env:
           CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
