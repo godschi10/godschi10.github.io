@@ -114,3 +114,32 @@ blockquote {
     body { background: #080b0b; }
     .post-entry { background: #0f1414; }
 }
+
+/* Sticky header hide on scroll */
+.header { transition: transform 0.3s ease-in-out; }
+.header.is-hidden { transform: translateY(-100%); }
+
+/* Back to top */
+#as-back-to-top {
+  position: fixed; bottom: 90px; right: 20px;
+  width: 42px; height: 42px;
+  background: var(--brand-primary); color: #fff;
+  border-radius: 50%; display: flex; align-items: center; justify-content: center;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15); cursor: pointer;
+  z-index: 9999; text-decoration: none;
+  opacity: 0; visibility: hidden; pointer-events: none;
+  transition: all 0.4s ease;
+}
+#as-back-to-top svg { width: 22px; height: 22px; stroke: #fff; }
+#as-back-to-top.show { opacity: 0.8; visibility: visible; pointer-events: auto; }
+#as-back-to-top:hover { background: var(--brand-hover); opacity: 1; }
+
+/* Native share button */
+.native-share-trigger {
+  display: inline-flex; align-items: center; gap: 8px;
+  background: var(--brand-primary); color: #fff;
+  border: none; padding: 10px 20px; border-radius: 50px;
+  font-size: 14px; font-weight: 600; cursor: pointer;
+  margin: 20px 0;
+}
+.native-share-trigger:hover { background: var(--brand-hover); }

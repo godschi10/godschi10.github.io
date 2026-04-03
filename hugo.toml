@@ -1,15 +1,39 @@
 baseURL = "https://androidscroll.gwill.workers.dev/"
 languageCode = "en-us"
-title = "My Blog"
+title = "AndroidScroll"
 theme = "PaperMod"
 
 [params]
-  description = "My personal blog"
+  description = "Android tips, tricks and guides"
   ShowReadingTime = true
   ShowPostNavLinks = true
   ShowBreadCrumbs = true
+  ShowShareButtons = false
+  ShowToc = true
+  TocOpen = false
+  ShowCodeCopyButtons = true
+  logo = "/images/logo.png"
+  author = "AndroidScroll"
 
 [markup]
   [markup.goldmark]
     [markup.goldmark.renderer]
       unsafe = true
+  [markup.tableOfContents]
+    startLevel = 2
+    endLevel = 2
+
+[[menu.main]]
+  name = "Home"
+  url = "/"
+  weight = 1
+
+[[menu.main]]
+  name = "Android"
+  url = "/categories/android/"
+  weight = 2
+
+[[menu.main]]
+  name = "Battery"
+  url = "/categories/battery/"
+  weight = 3
