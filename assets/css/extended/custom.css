@@ -22,7 +22,7 @@
 }
 
 /* ── Dark Mode ── */
-html.dark {
+body.dark {
     --theme:       #0a0f0f;
     --entry:       #0f1414;
     --primary:     #e9ecec;
