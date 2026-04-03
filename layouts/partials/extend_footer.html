@@ -58,29 +58,29 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 
-  // Fix TOC — add IDs to raw HTML headings
+  // TOC fix — assign IDs to headings then rewrite TOC links to match
   const content = document.querySelector(".post-content");
-  if (!content) return;
-  const slugCount = {};
-  content.querySelectorAll("h2, h3").forEach(function (h) {
-    if (h.id) return;
-    let slug = h.textContent.trim()
-      .toLowerCase()
-      .replace(/[^\w\s-]/g, "")
-      .replace(/\s+/g, "-")
-      .replace(/-+/g, "-");
-    slugCount[slug] = (slugCount[slug] || 0) + 1;
-    if (slugCount[slug] > 1) slug += "-" + slugCount[slug];
+  const toc = document.querySelector(".toc");
+  if (!content || !toc) return;
+
+  // Step 1: collect all headings and assign IDs
+  const headings = Array.from(content.querySelectorAll("h2, h3"));
+  headings.forEach(function (h, i) {
+    const slug = "heading-" + i;
     h.id = slug;
   });
 
-  // Smooth scroll TOC links with header offset
-  document.querySelectorAll(".toc a[href^='#']").forEach(function (link) {
-    link.addEventListener("click", function (e) {
-      e.preventDefault();
-      const target = document.getElementById(decodeURIComponent(this.hash.slice(1)));
-      if (target) window.scrollTo({ top: target.getBoundingClientRect().top + window.scrollY - 80, behavior: "smooth" });
-    });
+  // Step 2: rewrite TOC links to match heading order
+  const tocLinks = Array.from(toc.querySelectorAll("a"));
+  tocLinks.forEach(function (link, i) {
+    if (headings[i]) {
+      link.href = "#heading-" + i;
+      link.addEventListener("click", function (e) {
+        e.preventDefault();
+        const target = document.getElementById("heading-" + i);
+        if (target) window.scrollTo({ top: target.getBoundingClientRect().top + window.scrollY - 80, behavior: "smooth" });
+      });
+    }
   });
 
 });
