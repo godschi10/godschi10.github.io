@@ -37,3 +37,7 @@ theme = "PaperMod"
   name = "Battery"
   url = "/categories/battery/"
   weight = 3
+
+[params.colorScheme]
+  defaultTheme = "auto"
+  disableThemeToggle = false
