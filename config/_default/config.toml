@@ -1,0 +1,3 @@
+theme = "blowfish"
+baseURL = "https://androidscroll.gwill.workers.dev/"
+defaultContentLanguage = "en"

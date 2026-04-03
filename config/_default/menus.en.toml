@@ -1,0 +1,14 @@
+[[main]]
+  name = "Home"
+  url = "/"
+  weight = 1
+
+[[main]]
+  name = "Android"
+  url = "/categories/android/"
+  weight = 2
+
+[[main]]
+  name = "Battery"
+  url = "/categories/battery/"
+  weight = 3

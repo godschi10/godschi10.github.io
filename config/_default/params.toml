@@ -1,0 +1,22 @@
+colorScheme = "custom"
+defaultAppearance = "dark"
+autoSwitchAppearance = true
+
+[homepage]
+  layout = "card"
+  showRecent = true
+  recentLimit = 10
+
+[article]
+  showDate = true
+  showReadingTime = true
+  showTableOfContents = true
+  showBreadcrumbs = true
+  showRelatedContent = true
+
+[list]
+  showCards = true
+  showTableOfContents = false
+
+[header]
+  layout = "basic"
