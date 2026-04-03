@@ -2,6 +2,9 @@ theme = "blowfish"
 baseURL = "https://androidscroll.gwill.workers.dev/"
 defaultContentLanguage = "en"
 
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+
 [markup]
   [markup.goldmark]
     [markup.goldmark.renderer]

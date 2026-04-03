@@ -2,10 +2,16 @@ colorScheme = "custom"
 defaultAppearance = "dark"
 autoSwitchAppearance = true
 
+enableSearch = true
+enableCodeCopy = true
+mainSections = ["posts"]
+
 [homepage]
   layout = "card"
   showRecent = true
   recentLimit = 10
+  showMoreLink = true
+  showMoreLinkDest = "/posts"
 
 [article]
   showDate = true
@@ -14,10 +20,28 @@ autoSwitchAppearance = true
   showBreadcrumbs = true
   showRelatedContent = true
   relatedContentLimit = 3
+  showTaxonomies = true
+  showAuthor = true
+  showPagination = true
+  sharingLinks = ["twitter", "whatsapp", "telegram"]
 
 [list]
   showCards = true
   showTableOfContents = false
+  showSummary = true
+  groupByYear = false
 
 [header]
   layout = "basic"
+
+[footer]
+  showCopyright = true
+  showThemeAttribution = false
+  showScrollToTop = true
+
+[taxonomy]
+  showTermCount = true
+  showHero = true
+
+[sitemap]
+  excludedKinds = []

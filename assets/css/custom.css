@@ -1,5 +1,18 @@
+/* AndroidScroll Brand */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Space+Grotesk:wght@600;700&display=swap');
+
 :root {
-  --color-primary-500: #00A88F;
-  --color-primary-600: #008c72;
-  --color-primary-400: #00c9a6;
+    --color-primary-50:  #eef9f6;
+    --color-primary-100: #d0f0e8;
+    --color-primary-200: #a1e1d1;
+    --color-primary-300: #6ecfbb;
+    --color-primary-400: #00c9a6;
+    --color-primary-500: #00A88F;
+    --color-primary-600: #008c72;
+    --color-primary-700: #006d58;
+    --color-primary-800: #004f40;
+    --color-primary-900: #003028;
 }
+
+body { font-family: 'Inter', Arial, sans-serif; }
+h1, h2, h3, h4, h5, h6, .font-bold { font-family: 'Space Grotesk', Arial, sans-serif; }
