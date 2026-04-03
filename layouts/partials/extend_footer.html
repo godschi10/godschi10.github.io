@@ -1,13 +1,6 @@
 <!-- Reading Progress -->
 <div id="reading-progress"></div>
 
-<!-- Back to Top -->
-<a id="as-back-to-top" title="Back to top">
-  <svg viewBox="0 0 24 24" fill="none">
-    <path d="M12 19V5M12 5L6 11M12 5L18 11" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-  </svg>
-</a>
-
 <!-- Sticky Footer Ad -->
 <div class="as-sticky-footer" id="asStickyFooter">
   <button class="as-sf-close" id="asSfClose" aria-label="Close">✕</button>
@@ -32,24 +25,11 @@ document.addEventListener("DOMContentLoaded", function () {
   if (bar) {
     window.addEventListener("scroll", function () {
       const d = document.documentElement;
-      const pct = (d.scrollTop / (d.scrollHeight - d.clientHeight)) * 100;
-      bar.style.width = Math.min(pct, 100) + "%";
+      bar.style.width = Math.min((d.scrollTop / (d.scrollHeight - d.clientHeight)) * 100, 100) + "%";
     });
   }
 
-  // Back to top
-  const topBtn = document.getElementById("as-back-to-top");
-  if (topBtn) {
-    window.addEventListener("scroll", function () {
-      topBtn.classList.toggle("show", window.scrollY > 400);
-    });
-    topBtn.addEventListener("click", function (e) {
-      e.preventDefault();
-      window.scrollTo({ top: 0, behavior: "smooth" });
-    });
-  }
-
-  // Sticky header hide/show
+  // Sticky header
   const header = document.querySelector("header");
   if (header) {
     let last = 0;
@@ -71,55 +51,37 @@ document.addEventListener("DOMContentLoaded", function () {
     } else {
       setTimeout(function () { sf.classList.add("as-sf--show"); }, 5000);
     }
-  }
-  if (sfClose) {
-    sfClose.addEventListener("click", function () {
+    sfClose && sfClose.addEventListener("click", function () {
       sf.classList.remove("as-sf--show");
       setTimeout(function () { sf.style.display = "none"; }, 350);
       sessionStorage.setItem("as_sf_closed", "1");
     });
   }
 
-});
-</script>
-<script>
-// Auto-add IDs to raw HTML headings so TOC links work
-document.addEventListener("DOMContentLoaded", function () {
+  // Fix TOC — add IDs to raw HTML headings
   const content = document.querySelector(".post-content");
   if (!content) return;
-
-  const headings = content.querySelectorAll("h2, h3");
   const slugCount = {};
-
-  headings.forEach(function (h) {
-    if (h.id) return; // already has ID
-
+  content.querySelectorAll("h2, h3").forEach(function (h) {
+    if (h.id) return;
     let slug = h.textContent.trim()
       .toLowerCase()
       .replace(/[^\w\s-]/g, "")
       .replace(/\s+/g, "-")
       .replace(/-+/g, "-");
-
-    if (slugCount[slug]) {
-      slugCount[slug]++;
-      slug = slug + "-" + slugCount[slug];
-    } else {
-      slugCount[slug] = 1;
-    }
-
+    slugCount[slug] = (slugCount[slug] || 0) + 1;
+    if (slugCount[slug] > 1) slug += "-" + slugCount[slug];
     h.id = slug;
   });
 
-  // Fix scroll offset for sticky header
-  document.querySelectorAll('.toc a[href^="#"]').forEach(function (link) {
+  // Smooth scroll TOC links with header offset
+  document.querySelectorAll(".toc a[href^='#']").forEach(function (link) {
     link.addEventListener("click", function (e) {
       e.preventDefault();
-      const target = document.getElementById(this.getAttribute("href").slice(1));
-      if (target) {
-        const offset = target.getBoundingClientRect().top + window.scrollY - 80;
-        window.scrollTo({ top: offset, behavior: "smooth" });
-      }
+      const target = document.getElementById(decodeURIComponent(this.hash.slice(1)));
+      if (target) window.scrollTo({ top: target.getBoundingClientRect().top + window.scrollY - 80, behavior: "smooth" });
     });
   });
+
 });
 </script>
