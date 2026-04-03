@@ -5,6 +5,10 @@ enableSearch = true
 enableCodeCopy = true
 mainSections = ["posts"]
 
+[author]
+  name = "AndroidScroll"
+  headline = "Android tips, tricks and guides"
+
 [homepage]
   layout = "hero"
   showRecent = true
