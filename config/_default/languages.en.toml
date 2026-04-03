@@ -1,4 +1,5 @@
 title = "AndroidScroll"
-[params.author]
+
+[author]
   name = "AndroidScroll"
   headline = "Android tips, tricks and guides"
