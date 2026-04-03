@@ -1,0 +1,47 @@
+baseURL = "https://androidscroll.gwill.workers.dev/"
+languageCode = "en-us"
+title = "AndroidScroll"
+theme = "PaperMod"
+defaultTheme = "auto"
+disableThemeToggle = false
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+  [markup.tableOfContents]
+    startLevel = 2
+    endLevel = 2
+
+[params]
+  description = "Android tips, tricks and guides"
+  author = "AndroidScroll"
+  ShowReadingTime = true
+  ShowPostNavLinks = true
+  ShowBreadCrumbs = true
+  ShowToc = true
+  TocOpen = false
+  ShowCodeCopyButtons = true
+  ShowShareButtons = true
+  defaultTheme = "auto"
+  disableThemeToggle = false
+
+[[menu.main]]
+  name = "Home"
+  url = "/"
+  weight = 1
+[[menu.main]]
+  name = "Posts"
+  url = "/posts/"
+  weight = 2
+[[menu.main]]
+  identifier = "search"
+  name = "Search"
+  url = "/search/"
+  weight = 3
+
+[markup.highlight]
+  noClasses = false

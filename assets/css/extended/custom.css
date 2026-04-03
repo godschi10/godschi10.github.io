@@ -1,171 +1,98 @@
-/* ── Fonts ── */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Space+Grotesk:wght@600;700&display=swap');
 
-/* ── Light Mode ── */
+/* ── Brand ── */
 :root {
-    --brand:           #00A88F;
-    --brand-hover:     #008c72;
-    --brand-light:     #eef9f6;
-    --font-heading:    'Space Grotesk', Arial, sans-serif;
-    --font-body:       'Inter', Arial, sans-serif;
+    --brand:        #00A88F;
+    --brand-hover:  #008c72;
+    --brand-light:  #eef9f6;
+    --font-head:    'Space Grotesk', Arial, sans-serif;
+    --font-body:    'Inter', Arial, sans-serif;
 
-    /* Override PaperMod's own variables */
-    --theme:           #ffffff;
-    --entry:           #ffffff;
-    --primary:         #1a1a1a;
-    --secondary:       #555555;
-    --tertiary:        #f5f5f5;
-    --content:         #1a1a1a;
-    --hljs-bg:         #f0f8f8;
-    --code-bg:         #f0f8f8;
-    --border:          #e1eaea;
+    /* PaperMod light overrides */
+    --theme:     #ffffff;
+    --entry:     #ffffff;
+    --primary:   #1a1a1a;
+    --secondary: #555555;
+    --tertiary:  #f5f5f5;
+    --border:    #e1eaea;
+    --content:   #1a1a1a;
 }
 
 /* ── Dark Mode ── */
 body.dark {
-    --theme:       #0a0f0f;
-    --entry:       #0f1414;
-    --primary:     #e9ecec;
-    --secondary:   #9aa3a3;
-    --tertiary:    #171d1d;
-    --content:     #e9ecec;
-    --hljs-bg:     #171d1d;
-    --code-bg:     #171d1d;
-    --border:      #2a3333;
+    --theme:     #080b0b !important;
+    --entry:     #0f1414 !important;
+    --primary:   #e9ecec !important;
+    --secondary: #9aa3a3 !important;
+    --tertiary:  #171d1d !important;
+    --border:    #2a3333 !important;
+    --content:   #e9ecec !important;
 }
 
-/* ── Base Typography ── */
-body {
-    font-family: var(--font-body);
-    font-size: 18px;
-    line-height: 1.75;
-    background: var(--theme);
-    color: var(--primary);
-}
+body.dark { background: #080b0b !important; color: #e9ecec !important; }
+body.dark .post-entry { background: #0f1414 !important; border-color: #2a3333; }
+body.dark .top-link { background: #0f1414 !important; }
+body.dark header { background: #080b0b !important; }
+body.dark .menu a { color: #e9ecec !important; }
 
-h1, h2, h3, h4, h5, h6 {
-    font-family: var(--font-heading);
-    letter-spacing: -0.03em;
-    color: var(--primary);
-}
+/* ── Fonts ── */
+body { font-family: var(--font-body); font-size: 18px; line-height: 1.75; }
+h1,h2,h3,h4,h5,h6 { font-family: var(--font-head); letter-spacing: -0.03em; }
 
-/* ── Accent Color Throughout ── */
+/* ── Accent ── */
 a { color: var(--brand); }
 a:hover { color: var(--brand-hover); }
-.post-entry:hover { border-color: var(--brand); }
+.post-entry:hover { border-color: var(--brand); transform: translateY(-3px); }
 ::selection { color: #fff; background: var(--brand); }
 
 /* ── Header ── */
-.header {
-    background: var(--theme);
-    border-bottom: 1px solid var(--border);
-    transition: transform 0.3s ease-in-out;
-}
-.header.is-hidden { transform: translateY(-100%); }
-.logo a { font-family: var(--font-heading); font-weight: 700; color: var(--primary) !important; }
-.nav a { font-family: var(--font-heading); font-weight: 700; font-size: 13px; text-transform: uppercase; }
-.nav a:hover { color: var(--brand); }
-
-/* ── Dark mode toggle button ── */
-#theme-toggle svg { fill: var(--primary); }
+header { background: var(--theme); border-bottom: 1px solid var(--border); }
+.nav a { font-family: var(--font-head); font-weight: 700; font-size: 13px; text-transform: uppercase; }
 
 /* ── Post Cards ── */
 .post-entry {
-    background: var(--entry);
     border: 1px solid var(--border);
     border-radius: 0;
     transition: transform 0.25s, border-color 0.25s;
+    background: var(--entry);
 }
-.post-entry:hover { transform: translateY(-4px); border-color: var(--brand); }
-.entry-hint-parent, .entry-hint { color: var(--brand) !important; }
 
-/* ── Post Content ── */
-.post-content { font-family: var(--font-body); }
-.post-title { font-family: var(--font-heading); font-weight: 700; letter-spacing: -0.04em; }
+/* ── TOC ── */
+.toc { background: var(--tertiary); border-left: 4px solid var(--brand); padding: 16px; }
+.toc a:hover { color: var(--brand); }
 
+/* ── Blockquote ── */
 blockquote {
     background: var(--tertiary);
     border-left: 5px solid var(--brand);
-    padding: 20px 30px;
-    border-radius: 0;
-    font-style: normal;
+    padding: 20px 30px; font-style: normal;
 }
 
-/* Custom list bullets */
-.post-content ul li::marker { color: var(--brand); }
-.post-content ol li::marker { color: var(--brand); font-weight: 700; }
-
-/* ── TOC ── */
-.toc { background: var(--tertiary); border-left: 4px solid var(--brand); border-radius: 0; }
-.toc a { color: var(--primary); }
-.toc a:hover { color: var(--brand); }
-
-/* ── Reading Progress Bar ── */
-.reading-progress-container {
+/* ── Reading progress ── */
+#reading-progress {
     position: fixed; top: 0; left: 0;
-    width: 100%; height: 3px;
-    background: transparent; z-index: 99999;
-}
-.progress-bar {
-    height: 3px;
-    background: linear-gradient(90deg, var(--brand-hover), var(--brand));
-    width: 0%; transition: width 0.15s ease;
+    width: 0%; height: 3px;
+    background: var(--brand);
+    z-index: 99999; transition: width 0.1s ease;
 }
 
-/* ── Back to Top ── */
+/* ── Back to top ── */
 #as-back-to-top {
-    position: fixed; bottom: 90px; right: 20px;
+    position: fixed; bottom: 30px; right: 20px;
     width: 42px; height: 42px;
     background: var(--brand); color: #fff;
-    border-radius: 50%; display: flex; align-items: center; justify-content: center;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.15); cursor: pointer;
+    border-radius: 50%; display: flex;
+    align-items: center; justify-content: center;
     z-index: 9999; text-decoration: none;
     opacity: 0; visibility: hidden; pointer-events: none;
-    transition: all 0.4s ease;
+    transition: all 0.3s ease;
 }
-#as-back-to-top svg { width: 22px; height: 22px; stroke: #fff; }
-#as-back-to-top.show { opacity: 0.8; visibility: visible; pointer-events: auto; }
-#as-back-to-top:hover { background: var(--brand-hover); opacity: 1; }
-
-/* ── Native Share Button ── */
-.native-share-trigger {
-    display: inline-flex; align-items: center; gap: 8px;
-    background: var(--brand); color: #fff;
-    border: none; padding: 10px 20px; border-radius: 50px;
-    font-size: 14px; font-weight: 600; cursor: pointer; margin: 20px 0;
-}
-.native-share-trigger:hover { background: var(--brand-hover); }
-
-/* ── Sticky Footer Ad ── */
-.as-sticky-footer {
-    position: fixed; bottom: 0; left: 0; right: 0; z-index: 9000;
-    padding: 10px 22px;
-    background: var(--entry);
-    border-top: 1px solid var(--border);
-    box-shadow: 0 -4px 20px rgba(0,0,0,0.08);
-    transform: translateY(100%); opacity: 0;
-    transition: transform 0.35s ease, opacity 0.35s ease; pointer-events: none;
-}
-.as-sticky-footer.as-sf--show { transform: translateY(0); opacity: 1; pointer-events: all; }
-.as-sf-close {
-    position: absolute; top: -11px; right: 12px;
-    width: 22px; height: 22px; border-radius: 50%;
-    border: 1px solid var(--border); background: var(--entry);
-    color: var(--secondary); cursor: pointer;
-    display: flex; align-items: center; justify-content: center; padding: 0;
-}
-.as-sf-inner { display: flex; align-items: center; gap: 12px; text-decoration: none !important; }
-.as-sf-img { width: 52px; height: 52px; border-radius: 4px; overflow: hidden; background: var(--tertiary); }
-.as-sf-img img { width: 100%; height: 100%; object-fit: contain; padding: 4px; }
-.as-sf-body { flex: 1; display: flex; flex-direction: column; gap: 1px; }
-.as-sf-label { font-size: 9px; font-weight: 600; text-transform: uppercase; color: var(--secondary); }
-.as-sf-headline { font-family: var(--font-heading); font-size: 14px; font-weight: 700; color: var(--primary); margin: 0; }
-.as-sf-sub { font-size: 11px; color: var(--secondary); }
-.as-sf-cta { background: #F5A623; color: #fff; font-size: 12px; font-weight: 700; padding: 9px 16px; border-radius: 6px; white-space: nowrap; }
+#as-back-to-top.show { opacity: 1; visibility: visible; pointer-events: auto; }
+#as-back-to-top svg { width: 20px; height: 20px; stroke: #fff; }
 
 /* ── Footer ── */
 .footer { border-top: 4px solid var(--brand); }
 
-/* ── Pagination ── */
-.page-link:hover { color: var(--brand); }
-.active { color: var(--brand) !important; }
+/* ── Lists ── */
+.post-content ul li::marker { color: var(--brand); }
+.post-content ol li::marker { color: var(--brand); font-weight: 700; }
