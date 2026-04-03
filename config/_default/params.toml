@@ -13,6 +13,7 @@ autoSwitchAppearance = true
   showTableOfContents = true
   showBreadcrumbs = true
   showRelatedContent = true
+  relatedContentLimit = 3
 
 [list]
   showCards = true
