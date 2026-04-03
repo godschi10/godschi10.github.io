@@ -4,11 +4,11 @@
   weight = 1
 
 [[main]]
-  name = "Android"
-  url = "/categories/android/"
+  name = "Posts"
+  url = "/posts/"
   weight = 2
 
 [[main]]
-  name = "Battery"
-  url = "/categories/battery/"
+  name = "Search"
+  url = "/search/"
   weight = 3
