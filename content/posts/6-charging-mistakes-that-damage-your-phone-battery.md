@@ -1,6 +1,7 @@
 ---
 title: "7 Charging mistakes that are damaging your phone battery"
 date: 2022-03-14
+featured: true
 draft: false
 ---
 

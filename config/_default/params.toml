@@ -7,7 +7,7 @@ enableCodeCopy = true
 mainSections = ["posts"]
 
 [homepage]
-  layout = "card"
+  layout = "background"
   showRecent = true
   recentLimit = 10
   showMoreLink = true
