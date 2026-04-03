@@ -12,8 +12,9 @@ theme = "PaperMod"
   ShowToc = true
   TocOpen = false
   ShowCodeCopyButtons = true
-  logo = "/images/logo.png"
   author = "AndroidScroll"
+  defaultTheme = "auto"
+  disableThemeToggle = false
 
 [markup]
   [markup.goldmark]
@@ -37,7 +38,3 @@ theme = "PaperMod"
   name = "Battery"
   url = "/categories/battery/"
   weight = 3
-
-[params.colorScheme]
-  defaultTheme = "auto"
-  disableThemeToggle = false
