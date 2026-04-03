@@ -2,3 +2,12 @@
 <script>
   const swup = new Swup();
 </script>
+<div id="reading-progress"></div>
+<script>
+  window.addEventListener('scroll', () => {
+    const doc = document.documentElement;
+    const scrolled = (doc.scrollTop / (doc.scrollHeight - doc.clientHeight)) * 100;
+    const bar = document.getElementById('reading-progress');
+    if (bar) bar.style.width = scrolled + '%';
+  });
+</script>
