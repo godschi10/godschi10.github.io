@@ -1,29 +1,16 @@
-<!-- Reading Progress Bar -->
-<div class="reading-progress-container"><div class="progress-bar" id="myBar"></div></div>
+<!-- Reading Progress -->
+<div id="reading-progress"></div>
 
 <!-- Back to Top -->
-<a id="as-back-to-top" title="Scroll to top">
+<a id="as-back-to-top" title="Back to top">
   <svg viewBox="0 0 24 24" fill="none">
-    <path d="M12 19V5M12 5L6 11M12 5L18 11" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M12 19V5M12 5L6 11M12 5L18 11" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
   </svg>
 </a>
 
-<!-- Native Share Button -->
-<button id="native-share-btn" class="native-share-trigger" style="display:none">
-  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-    <circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/>
-    <line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/>
-  </svg>
-  Share
-</button>
-
 <!-- Sticky Footer Ad -->
 <div class="as-sticky-footer" id="asStickyFooter">
-  <button class="as-sf-close" id="asSfClose" aria-label="Close">
-    <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round">
-      <line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/>
-    </svg>
-  </button>
+  <button class="as-sf-close" id="asSfClose" aria-label="Close">✕</button>
   <a href="https://androidscroll.com/offer/anker-chargers/" class="as-sf-inner" target="_blank" rel="noopener sponsored">
     <div class="as-sf-img">
       <img src="https://androidscroll.com/wp-content/uploads/2026/03/Anker-Logo.jpeg" alt="Anker Charger" loading="lazy">
@@ -37,85 +24,59 @@
   </a>
 </div>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/nprogress/0.2.0/nprogress.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/swup/4.6.0/Swup.min.js"></script>
 <script>
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
 
-  // Swup page transitions
-  const swup = new Swup();
-  swup.hooks.on('visit:start', () => NProgress.start());
-  swup.hooks.on('page:rendered', () => NProgress.done());
-
-  // Reading progress bar
-  const bar = document.getElementById("myBar");
+  // Reading progress
+  const bar = document.getElementById("reading-progress");
   if (bar) {
-    window.addEventListener("scroll", function() {
-      const doc = document.documentElement;
-      const scrolled = (doc.scrollTop / (doc.scrollHeight - doc.clientHeight)) * 100;
-      bar.style.width = Math.min(scrolled, 100) + "%";
-      bar.style.opacity = scrolled >= 100 ? "0.4" : "1";
-    });
-  }
-
-  // Sticky header — hide on scroll down, show on scroll up
-  const header = document.querySelector('.header');
-  if (header) {
-    let lastScroll = 0;
-    window.addEventListener('scroll', function() {
-      const cur = window.pageYOffset;
-      if (cur <= 0) { header.classList.remove('is-hidden'); return; }
-      if (Math.abs(cur - lastScroll) < 10) return;
-      header.classList.toggle('is-hidden', cur > lastScroll);
-      lastScroll = cur;
+    window.addEventListener("scroll", function () {
+      const d = document.documentElement;
+      const pct = (d.scrollTop / (d.scrollHeight - d.clientHeight)) * 100;
+      bar.style.width = Math.min(pct, 100) + "%";
     });
   }
 
   // Back to top
   const topBtn = document.getElementById("as-back-to-top");
   if (topBtn) {
-    window.addEventListener('scroll', function() {
-      topBtn.classList.toggle('show', window.pageYOffset > 2500);
+    window.addEventListener("scroll", function () {
+      topBtn.classList.toggle("show", window.scrollY > 400);
     });
-    topBtn.addEventListener('click', function(e) {
+    topBtn.addEventListener("click", function (e) {
       e.preventDefault();
-      topBtn.classList.remove('show');
-      window.scrollTo({ top: 0, behavior: 'smooth' });
+      window.scrollTo({ top: 0, behavior: "smooth" });
     });
   }
 
-  // Native share button
-  const shareBtn = document.getElementById('native-share-btn');
-  if (shareBtn && navigator.share) {
-    shareBtn.style.display = 'inline-flex';
-    shareBtn.addEventListener('click', function() {
-      navigator.share({ title: document.title, url: window.location.href });
+  // Sticky header hide/show
+  const header = document.querySelector("header");
+  if (header) {
+    let last = 0;
+    window.addEventListener("scroll", function () {
+      const cur = window.scrollY;
+      if (cur <= 0) { header.style.transform = "translateY(0)"; return; }
+      header.style.transform = cur > last ? "translateY(-100%)" : "translateY(0)";
+      header.style.transition = "transform 0.3s ease";
+      last = cur;
     });
   }
 
   // Sticky footer ad
-  const sf = document.getElementById('asStickyFooter');
-  const sfClose = document.getElementById('asSfClose');
-  if (sf && sfClose) {
-    if (sessionStorage.getItem('as_sf_closed')) { sf.style.display = 'none'; }
-    else { setTimeout(function(){ sf.classList.add('as-sf--show'); }, 5000); }
-    sfClose.addEventListener('click', function() {
-      sf.classList.remove('as-sf--show');
-      setTimeout(function(){ sf.style.display = 'none'; }, 350);
-      sessionStorage.setItem('as_sf_closed', '1');
-    });
+  const sf = document.getElementById("asStickyFooter");
+  const sfClose = document.getElementById("asSfClose");
+  if (sf) {
+    if (sessionStorage.getItem("as_sf_closed")) {
+      sf.style.display = "none";
+    } else {
+      setTimeout(function () { sf.classList.add("as-sf--show"); }, 5000);
+    }
   }
-
-  // TOC collapse toggle
-  const tocHeader = document.getElementById('astra-toc-header');
-  const tocContainer = document.getElementById('astra-toc-container');
-  if (tocHeader && tocContainer) {
-    const isMobile = window.innerWidth < 769;
-    const saved = localStorage.getItem('astra_toc_state');
-    if (saved === 'collapsed' || (!saved && isMobile)) tocContainer.classList.add('toc-collapsed');
-    tocHeader.addEventListener('click', function() {
-      tocContainer.classList.toggle('toc-collapsed');
-      localStorage.setItem('astra_toc_state', tocContainer.classList.contains('toc-collapsed') ? 'collapsed' : 'expanded');
+  if (sfClose) {
+    sfClose.addEventListener("click", function () {
+      sf.classList.remove("as-sf--show");
+      setTimeout(function () { sf.style.display = "none"; }, 350);
+      sessionStorage.setItem("as_sf_closed", "1");
     });
   }
 
