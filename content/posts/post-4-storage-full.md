@@ -4,7 +4,7 @@ date: 2026-04-05
 featured: true
 draft: false
 description: "Real fixes for fast battery drain on Android in 2026."
-cover: "https://androidscroll.com/wp-content/uploads/2026/02/android-battery-draining-fast.jpg"
+cover: "https://androidscroll.com/wp-content/uploads/2026/03/android-storage-full-after-deleting-files-768x384.jpg"
 categories: ["Troubleshooting"]
 ---
 
