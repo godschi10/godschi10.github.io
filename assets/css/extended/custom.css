@@ -29,6 +29,40 @@
 
 /* ── Brand ── */
 :root {
+  
+     /* Brand */
+    --brand-primary:          #00A88F;
+    --brand-hover:            #008c72;
+    --brand-light:            #eef9f6;
+
+    /* Typography */
+    --font-heading:           'Space Grotesk', Arial, sans-serif;
+    --font-body:              'Inter', Arial, sans-serif;
+
+    /* Text */
+    --text-main:              #1a1a1a;
+    --text-dark:              #000000;
+    --text-muted:             #555555;
+
+    /* Backgrounds */
+    --bg-body:                #f5f5f5;  /* GP grey page background */
+    --bg-surface:             #ffffff;  /* Cards, posts */
+    --bg-surface-2:           #f0f8f8;  /* TOC, comment boxes, hover */
+    --bg-footer:              #f5fdfd;
+    --bg-header:              #ffffff;
+    --bg-overlay:             rgba(0, 0, 0, 0.05);
+
+    /* Borders & Shadows */
+    --border-light:           #e1eaea;
+    --border-dark:            #c8d3d3;
+    --shadow-soft:            0 8px 24px rgba(0, 0, 0, 0.08);
+    --shadow-surface:         0 4px 16px rgba(0, 0, 0, 0.12);
+
+    /* UI */
+    --radius-main:            6px;
+    --container-side-padding: 22px;
+    --table-cells-padding:    15px;
+
     --brand:        #00A88F;
     --brand-hover:  #008c72;
     --brand-light:  #eef9f6;
