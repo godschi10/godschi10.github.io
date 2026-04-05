@@ -7,6 +7,9 @@ enableImageLazyLoading = true
 enableImageWebp = true
 fingerprintAlgorithm = "sha256"
 
+[author]
+  name = "Gwill Chijioke"
+
 [header]
   layout = "hamburger"
   showTitle = true
@@ -36,9 +39,6 @@ fingerprintAlgorithm = "sha256"
   showTaxonomies = false
   showWordCount = false
   showComments = false
-  
-  [author]
-  name = "Gwill Chijioke"
 
 [list]
   showBreadcrumbs = false
