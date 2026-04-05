@@ -3,6 +3,9 @@ title: "Android Storage Full Even After Deleting Files? Here's What's Actually T
 date: 2026-04-05
 featured: true
 draft: false
+description: "Real fixes for fast battery drain on Android in 2026."
+cover: "https://androidscroll.com/wp-content/uploads/2026/02/android-battery-draining-fast.jpg"
+categories: ["Troubleshooting"]
 ---
 
 
