@@ -184,4 +184,4 @@ Start with Files by Google, tap Clean, and check what it finds. Most people reco
 
 What was using the most space on yours? Drop it in the comments, especially if the number surprised you.
 
-To see all the Android problems covered on this site, visit [Android Problems: The Complete Fix Guide](/android-problems-fix/).
+To see all the Android problems covered on this site, visit [Android Problems: The Complete Fix Guide](/posts/android-problems-fix/).
