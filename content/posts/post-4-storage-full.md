@@ -1,13 +1,10 @@
 ---
-title: "Post 4"
+title: "Android Storage Full Even After Deleting Files? Here's What's Actually Taking Up Space"
 date: 2026-04-05
 featured: true
 draft: false
 ---
 
-
-
-# Android Storage Full Even After Deleting Files? Here's What's Actually Taking Up Space
 
 Your Android storage is still full after deleting files because the things you deleted were not the problem. App cache, WhatsApp media stored in a hidden folder, data left behind by apps you uninstalled months ago, and a trash bin that has not been emptied are what is filling the phone. None of these show up in your gallery.
 
