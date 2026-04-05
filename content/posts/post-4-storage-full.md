@@ -12,13 +12,15 @@ I checked storage on a Tecno Camon 15 Air running Android 10 with 64GB and a Tec
 
 The steps below clear each hidden category in order, starting with what typically takes the most space.
 
-> **Quick Summary**
-> - WhatsApp hidden media: often 3-15GB in a folder your gallery never shows
-> - App cache across Instagram, Chrome, YouTube: can total several GB
-> - Ghost files: data from apps you uninstalled that Android never cleaned up
-> - Trash bin: deleted photos still count as used storage for 30 days
-> - Downloads folder: forgotten installers and files building up invisibly
-> - Start with Files by Google, tap Clean. It finds and shows all of this in under 60 seconds
+{{< div class="quick-summary" >}}
+Quick Summary
+- WhatsApp hidden media: often 3-15GB in a folder your gallery never shows
+- App cache across Instagram, Chrome, YouTube: can total several GB
+- Ghost files: data from apps you uninstalled that Android never cleaned up
+- Trash bin: deleted photos still count as used storage for 30 days
+- Downloads folder: forgotten installers and files building up invisibly
+- Start with Files by Google, tap Clean. It finds and shows all of this in under 60 seconds
+{{<div>}}
 
 ## Where Your Storage Actually Goes
 
