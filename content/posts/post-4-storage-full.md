@@ -20,7 +20,7 @@ Quick Summary
 - Trash bin: deleted photos still count as used storage for 30 days
 - Downloads folder: forgotten installers and files building up invisibly
 - Start with Files by Google, tap Clean. It finds and shows all of this in under 60 seconds
-{{<div>}}
+{{< /div >}}
 
 ## Where Your Storage Actually Goes
 
