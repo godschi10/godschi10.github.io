@@ -12,8 +12,9 @@ I checked storage on a Tecno Camon 15 Air running Android 10 with 64GB and a Tec
 
 The steps below clear each hidden category in order, starting with what typically takes the most space.
 
-{{< div class="quick-summary" >}}
+{{< div class="quick_summary" >}}
 Quick Summary
+
 - WhatsApp hidden media: often 3-15GB in a folder your gallery never shows
 - App cache across Instagram, Chrome, YouTube: can total several GB
 - Ghost files: data from apps you uninstalled that Android never cleaned up
