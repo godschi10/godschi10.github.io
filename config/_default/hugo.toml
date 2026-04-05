@@ -5,18 +5,20 @@
 baseURL = "https://androidscroll.gwill.workers.dev/"
 title = "AndroidScroll"
 theme = "congo"
-defaultContentLanguage = "en"
-enableRobotsTXT = true
-summaryLength = 0
-
-enableRobotsTXT = true
-summaryLength = 0
 
 [pagination]
   pagerSize = 10
 
 [outputs]
   home = ["HTML", "RSS", "JSON"]
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+  [markup.tableOfContents]
+    startLevel = 2
+    endLevel = 2
 
 [privacy]
   [privacy.vimeo]
