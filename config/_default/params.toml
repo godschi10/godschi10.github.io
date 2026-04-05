@@ -36,6 +36,9 @@ fingerprintAlgorithm = "sha256"
   showTaxonomies = false
   showWordCount = false
   showComments = false
+  
+  [author]
+  name = "Gwill Chijioke"
 
 [list]
   showBreadcrumbs = false

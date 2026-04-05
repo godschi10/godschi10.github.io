@@ -7,6 +7,3 @@ title = "AndroidScroll"
 [params]
   dateFormat = "2 January 2006"
   description = "Android tips, tricks and guides"
-
-[params.author]
-  name = "Gwill Chijioke"
